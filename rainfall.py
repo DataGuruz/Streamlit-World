@@ -5,11 +5,11 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 
 # Load the trained model from the .pkl file
-model_path = r"C:\Users\Olufemi George\Desktop\Data Science Class Environment\Project Presentation\rainfall_prediction_model.pkl"
+model_path = "rainfall_prediction_model.pkl"
 lr = joblib.load(model_path)
 
 # Load the dataset and scale it, if necessary (just for scaling new inputs)
-df = pd.read_csv(r"C:\Users\Olufemi George\Desktop\Data Science Class Environment\Project Presentation\rainfall_prediction_dataset.csv")
+df = pd.read_csv(r"rainfall_prediction_dataset.csv")
 X = df.drop(columns=['rainfall'])  # Features
 Y = df['rainfall']  # Target labels
 
