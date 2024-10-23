@@ -6,3 +6,5 @@ xgboost
 TensorFlow
 seaborn
 imblearn
+joblib
+streamlit
