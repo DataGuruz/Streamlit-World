@@ -5,11 +5,11 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 
 # Load the trained model from the .pkl file
-model_path = "rainfall_prediction_model.pkl"
+model_path ="rainfall_prediction_model.pkl"
 lr = joblib.load(model_path)
 
 # Load the dataset and scale it, if necessary (just for scaling new inputs)
-df = pd.read_csv(r"rainfall_prediction_dataset.csv")
+df = pd.read_csv("rainfall_prediction_dataset.csv")
 X = df.drop(columns=['rainfall'])  # Features
 Y = df['rainfall']  # Target labels
 
@@ -18,7 +18,7 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X)
 
 # Streamlit App
-logo_path = r"rain_logo.png" 
+logo_path ="rain_logo.png" 
 st.image(logo_path, use_column_width='auto')
 
 st.title("Rainfall Prediction for Optimized Agricultural Operations")
