@@ -18,7 +18,7 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X)
 
 # Streamlit App
-logo_path = r"C:\Users\Olufemi George\Desktop\Data Science Class Environment\Project Presentation\rain_logo.png" 
+logo_path = r"rain_logo.png" 
 st.image(logo_path, use_column_width='auto')
 
 st.title("Rainfall Prediction for Optimized Agricultural Operations")
